@@ -1,10 +1,7 @@
 # handmade LCD font for pygame
 # 5x7ドットマトリクス
 
-from mcje.minecraft import Minecraft
 import param_MCJE as param
-
-mc = Minecraft.create(port=param.PORT_MC)
 
 
 LCD_0 = (0, 1, 1, 1, 0,
@@ -150,5 +147,5 @@ class LCD_font():
                 # ドットを描く
                 # pygame.draw.rect(self.screen, color, Rect(org1[0], org1[1], block_size, block_size))
 
-                mc.setBlock(x0 + x, y0 - y, z0, color)
+                self.mc.setBlock(x0 + x, y0 - y, z0, color)
                 i += 1
