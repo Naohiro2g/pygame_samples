@@ -103,13 +103,6 @@ LCD_DASH = (0, 0, 0, 0, 0,
 
 LCD_font_styles = (LCD_0, LCD_1, LCD_2, LCD_3, LCD_4, LCD_5, LCD_6, LCD_7, LCD_8, LCD_9, LCD_COLON, LCD_DASH)
 
-DARK_GRAY = (40, 40, 40)
-GRAY = (80, 80, 80)
-RED = (255, 0, 0)
-GREEN = (10, 250, 10)
-YELLOW = (250, 250, 20)
-WHITE = (250, 250, 250)
-
 
 class LCD_font():
     def __init__(self, mc):
