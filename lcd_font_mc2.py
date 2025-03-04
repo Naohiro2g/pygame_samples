@@ -29,9 +29,10 @@ class LCD_font:
 
     def update_col(self, col=0, code=2):  # ある桁にある文字を表示する関数
         # codeの文字をcol桁目に表示、桁は最上位桁の左から右へ進む。
+        code = int(code) * 7
         for y in range(7):
             for x in range(5):
-                if int(LCD_font_styles[int(code) * 7 + y][x]) == 1:
+                if int(LCD_font_styles[code + y][x]) == 1:
                     color = self.COLOR_ON
                 else:
                     color = self.COLOR_OFF
